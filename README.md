@@ -8,9 +8,6 @@ In this phase, you'll transform your Phase 2 code into a 5 stage pipeline:
 * memory  -- for now, just print out what's input from the execute stage
 * writeback  -- for now, just print out what's input from the memory stage, and set some placeholder values for writing to the register file (in the decode stage)
 
-This is a diagram of the system.  Note, the gray regtangle in each box is labeled pipeline register -- that just represents that in each stage, you'll register values (in an always_ff) block, assigning to the output signals that get passed to the next stage:
-![System Overview](img/Phase3-diagram.svg)
-
 
 The files system_tb.sv, system.sv, and unclocked_ro_mem.sv (the instruction memory) are unchanged from Phase 2.  Also included is a testbench for the instruction memory (unclocked_ro_mem_tb.sv) that you don't need to do anything with, but provided for information.
 
