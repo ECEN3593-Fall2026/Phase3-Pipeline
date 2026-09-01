@@ -1,0 +1,50 @@
+(15) Execute Stage: PC = 00000000, Instruction = 00000000, Reg1 = 00000000, Reg2 = 00000000, Immediate = 00000000, Instruction String = unknown
+(15) Memory Stage: PC = 00000000, Instruction = 00000000
+(15) Writeback Stage: PC = 00000000, Instruction = 00000000
+(15) Decode stage: pc=0x00000000, instr=0x00000000 (other)
+
+
+(25) Writeback Stage: PC = 00000000, Instruction = 00000000
+(25) Memory Stage: PC = 00000000, Instruction = 00000000
+(25) Execute Stage: PC = 00000000, Instruction = 00000000, Reg1 = 000a0000, Reg2 = 000a0000, Immediate = 00000000, Instruction String = unknown
+(25) Decode stage: pc=0x00000000, instr=0x003100b3 (R-type):  add x1, x2, x3
+
+
+(35) Execute Stage: PC = 00000000, Instruction = 003100b3, Reg1 = 000a0002, Reg2 = 000a0003, Immediate = 00000000, Instruction String = add
+(35) Memory Stage: PC = 00000000, Instruction = 00000000
+(35) Writeback Stage: PC = 00000000, Instruction = 00000000
+(35) Decode stage: pc=0x00000004, instr=0x00bf42b3 (R-type):  xor x5, x30, x11
+
+
+(45) Writeback Stage: PC = 00000000, Instruction = 00000000
+(45) Memory Stage: PC = 00000000, Instruction = 003100b3
+(45) Execute Stage: PC = 00000004, Instruction = 00bf42b3, Reg1 = 000a001e, Reg2 = 000a000b, Immediate = 00000000, Instruction String = xor
+(45) Decode stage: pc=0x00000008, instr=0x00d17213 (I-type ALU):  andi x4, x2, 13
+
+
+(55) Execute Stage: PC = 00000008, Instruction = 00d17213, Reg1 = 000a0002, Reg2 = 000a000d, Immediate = 0000000d, Instruction String = andi
+(55) Memory Stage: PC = 00000004, Instruction = 00bf42b3
+(55) Writeback Stage: PC = 00000000, Instruction = 003100b3
+(55) Decode stage: pc=0x0000000c, instr=0x00f4e493 (I-type ALU):  ori x9, x9, 15
+
+
+(65) Writeback Stage: PC = 00000004, Instruction = 00bf42b3
+(65) Memory Stage: PC = 00000008, Instruction = 00d17213
+(65) Execute Stage: PC = 0000000c, Instruction = 00f4e493, Reg1 = 000a0009, Reg2 = 000a000f, Immediate = 0000000f, Instruction String = ori
+(65) Decode stage: pc=0x00000010, instr=0x00000000 (other)
+
+
+(75) Execute Stage: PC = 00000010, Instruction = 00000000, Reg1 = 000a0000, Reg2 = 000a0000, Immediate = 00000000, Instruction String = unknown
+(75) Memory Stage: PC = 0000000c, Instruction = 00f4e493
+(75) Writeback Stage: PC = 00000008, Instruction = 00d17213
+(75) Decode stage: pc=0x00000014, instr=0x00000000 (other)
+
+
+(85) Writeback Stage: PC = 0000000c, Instruction = 00f4e493
+(85) Memory Stage: PC = 00000010, Instruction = 00000000
+(85) Execute Stage: PC = 00000014, Instruction = 00000000, Reg1 = 000a0000, Reg2 = 000a0000, Immediate = 00000000, Instruction String = unknown
+(85) Decode stage: pc=0x00000018, instr=0x00000000 (other)
+
+
+// Pipeline is clear, so deleting rest of lines
+
