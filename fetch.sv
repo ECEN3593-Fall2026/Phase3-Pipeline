@@ -22,7 +22,7 @@ module fetch (
     // Program Counter 
     logic [31:0] pc;
     // Instruction 
-    logic [31:0] s_id_instr;
+   logic [31:0] s_if_instr;
 
     /** Your code here **/
     // Main three things it needs to do:
